@@ -1,4 +1,16 @@
- 
+
+header{
+    border-radius: 2em;
+    grid-area: header;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    background-image: url("imagenes.pro/women.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+
 .contenedor-accesorios{
     display: flex;
     flex-wrap: wrap;
@@ -40,6 +52,17 @@
 }
 .contenedor-accesorios .accesorios:hover .detalle-accesorios{
     bottom: 0;
+}
+
+.contenedor{
+    display: grid;
+    grid-template: repeat(6, auto)/100%;
+    grid-template-areas: "encabezado"
+        "barramenu"
+        "imagencentral"
+        "producto"
+        "footer";
+
 }
 
 .contenedor{
